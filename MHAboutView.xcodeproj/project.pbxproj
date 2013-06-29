@@ -16,6 +16,8 @@
 		9BF642E2177F63BF00FEF919 /* libMHAboutView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF642CA177F63BE00FEF919 /* libMHAboutView.a */; };
 		9BF642E8177F63BF00FEF919 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9BF642E6177F63BF00FEF919 /* InfoPlist.strings */; };
 		9BF642EA177F63BF00FEF919 /* MHAboutViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF642E9177F63BF00FEF919 /* MHAboutViewTests.m */; };
+		9BF642F7177F64E900FEF919 /* MHAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF642F6177F64E900FEF919 /* MHAboutViewController.m */; };
+		9BF642F9177F657400FEF919 /* libJMStaticContentTable.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF642F8177F657400FEF919 /* libJMStaticContentTable.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		9BF642E5177F63BF00FEF919 /* MHAboutViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MHAboutViewTests-Info.plist"; sourceTree = "<group>"; };
 		9BF642E7177F63BF00FEF919 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9BF642E9177F63BF00FEF919 /* MHAboutViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHAboutViewTests.m; sourceTree = "<group>"; };
+		9BF642F3177F64AB00FEF919 /* libJMStaticContentTable.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libJMStaticContentTable.a; path = "../JMStaticContentTableViewController/JMStaticContentTable/build/Debug-iphoneos/libJMStaticContentTable.a"; sourceTree = "<group>"; };
+		9BF642F5177F64E900FEF919 /* MHAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHAboutViewController.h; sourceTree = "<group>"; };
+		9BF642F6177F64E900FEF919 /* MHAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHAboutViewController.m; sourceTree = "<group>"; };
+		9BF642F8177F657400FEF919 /* libJMStaticContentTable.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJMStaticContentTable.a; path = "../../../Library/Developer/Xcode/DerivedData/Regularly.me-ddkerbjwyowamjauabgemmlbcxkv/Build/Products/Debug-iphoneos/libJMStaticContentTable.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BF642F9177F657400FEF919 /* libJMStaticContentTable.a in Frameworks */,
 				9BF642CE177F63BE00FEF919 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,6 +88,8 @@
 		9BF642C1177F63BE00FEF919 = {
 			isa = PBXGroup;
 			children = (
+				9BF642F5177F64E900FEF919 /* MHAboutViewController.h */,
+				9BF642F6177F64E900FEF919 /* MHAboutViewController.m */,
 				9BF642CF177F63BE00FEF919 /* MHAboutView */,
 				9BF642E3177F63BF00FEF919 /* MHAboutViewTests */,
 				9BF642CC177F63BE00FEF919 /* Frameworks */,
@@ -100,6 +109,8 @@
 		9BF642CC177F63BE00FEF919 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9BF642F8177F657400FEF919 /* libJMStaticContentTable.a */,
+				9BF642F3177F64AB00FEF919 /* libJMStaticContentTable.a */,
 				9BF642CD177F63BE00FEF919 /* Foundation.framework */,
 				9BF642DB177F63BF00FEF919 /* XCTest.framework */,
 				9BF642DE177F63BF00FEF919 /* UIKit.framework */,
@@ -225,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BF642D5177F63BE00FEF919 /* MHAboutView.m in Sources */,
+				9BF642F7177F64E900FEF919 /* MHAboutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +342,10 @@
 				DSTROOT = /tmp/MHAboutView.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MHAboutView/MHAboutView-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/Regularly.me-ddkerbjwyowamjauabgemmlbcxkv/Build/Products/Debug-iphoneos",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -342,6 +358,10 @@
 				DSTROOT = /tmp/MHAboutView.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MHAboutView/MHAboutView-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/Regularly.me-ddkerbjwyowamjauabgemmlbcxkv/Build/Products/Debug-iphoneos",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -403,6 +423,7 @@
 				9BF642EF177F63BF00FEF919 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9BF642F0177F63BF00FEF919 /* Build configuration list for PBXNativeTarget "MHAboutViewTests" */ = {
 			isa = XCConfigurationList;
@@ -411,6 +432,7 @@
 				9BF642F2177F63BF00FEF919 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
