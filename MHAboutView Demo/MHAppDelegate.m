@@ -7,7 +7,7 @@
 //
 
 #import "MHAppDelegate.h"
-#import "MHAboutViewController.h"
+#import <MHAboutView/MHAboutView.h>
 
 @implementation MHAppDelegate
 
