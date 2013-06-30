@@ -88,7 +88,7 @@
 		9BF642E5177F63BF00FEF919 /* MHAboutViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MHAboutViewTests-Info.plist"; sourceTree = "<group>"; };
 		9BF642E7177F63BF00FEF919 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9BF642E9177F63BF00FEF919 /* MHAboutViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHAboutViewTests.m; sourceTree = "<group>"; };
-		9BF642F3177F64AB00FEF919 /* libJMStaticContentTable.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libJMStaticContentTable.a; path = "../JMStaticContentTableViewController/JMStaticContentTable/build/Debug-iphoneos/libJMStaticContentTable.a"; sourceTree = "<group>"; };
+		9BF642F3177F64AB00FEF919 /* libJMStaticContentTable.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJMStaticContentTable.a; path = "../JMStaticContentTableViewController/JMStaticContentTable/build/Debug-iphoneos/libJMStaticContentTable.a"; sourceTree = "<group>"; };
 		9BF642F5177F64E900FEF919 /* MHAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHAboutViewController.h; sourceTree = "<group>"; };
 		9BF642F6177F64E900FEF919 /* MHAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHAboutViewController.m; sourceTree = "<group>"; };
 		9BF642F8177F657400FEF919 /* libJMStaticContentTable.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJMStaticContentTable.a; path = "../../../Library/Developer/Xcode/DerivedData/Regularly.me-ddkerbjwyowamjauabgemmlbcxkv/Build/Products/Debug-iphoneos/libJMStaticContentTable.a"; sourceTree = "<group>"; };
@@ -531,7 +531,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -561,7 +561,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -762,6 +762,7 @@
 				9BF6432E177F672600FEF919 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9BF6432F177F672600FEF919 /* Build configuration list for PBXNativeTarget "MHAboutView DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -770,6 +771,7 @@
 				9BF64331177F672600FEF919 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
