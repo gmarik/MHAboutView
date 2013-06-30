@@ -7,6 +7,7 @@
 //
 
 #import "MHAboutViewController.h"
+#import "UIApplication+VersionInfo.h"
 
 
 @implementation MHAboutViewController
