@@ -735,7 +735,7 @@
 				9BF642EC177F63BF00FEF919 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		9BF642ED177F63BF00FEF919 /* Build configuration list for PBXNativeTarget "MHAboutView" */ = {
 			isa = XCConfigurationList;
@@ -744,7 +744,7 @@
 				9BF642EF177F63BF00FEF919 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		9BF642F0177F63BF00FEF919 /* Build configuration list for PBXNativeTarget "MHAboutViewTests" */ = {
 			isa = XCConfigurationList;
@@ -753,7 +753,7 @@
 				9BF642F2177F63BF00FEF919 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		9BF6432C177F672600FEF919 /* Build configuration list for PBXNativeTarget "MHAboutView Demo" */ = {
 			isa = XCConfigurationList;
@@ -762,7 +762,7 @@
 				9BF6432E177F672600FEF919 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		9BF6432F177F672600FEF919 /* Build configuration list for PBXNativeTarget "MHAboutView DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -771,7 +771,7 @@
 				9BF64331177F672600FEF919 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
