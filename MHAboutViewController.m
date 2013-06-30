@@ -35,7 +35,7 @@
 
             cell.accessoryType = UITableViewCellAccessoryNone;
             cell.textLabel.text = @"Regularly.me";
-            cell.detailTextLabel.text = @"v1.0.1";
+            cell.detailTextLabel.text = UIApplication.versionBuild;
         }];
 
         [section addCell:^(JMStaticContentTableViewCell *staticContentCell, UITableViewCell *cell, NSIndexPath *indexPath) {
