@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MHAboutViewController.h"
+#import "UIApplication+VersionInfo.h"
 
-@interface MHAboutView : NSObject
-
-@end

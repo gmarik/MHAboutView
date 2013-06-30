@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		9BF642CE177F63BE00FEF919 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF642CD177F63BE00FEF919 /* Foundation.framework */; };
 		9BF642D3177F63BE00FEF919 /* MHAboutView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9BF642D2177F63BE00FEF919 /* MHAboutView.h */; };
-		9BF642D5177F63BE00FEF919 /* MHAboutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF642D4177F63BE00FEF919 /* MHAboutView.m */; };
 		9BF642DC177F63BF00FEF919 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF642DB177F63BF00FEF919 /* XCTest.framework */; };
 		9BF642DD177F63BF00FEF919 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF642CD177F63BE00FEF919 /* Foundation.framework */; };
 		9BF642DF177F63BF00FEF919 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF642DE177F63BF00FEF919 /* UIKit.framework */; };
@@ -34,6 +33,9 @@
 		9BF64334177F67CB00FEF919 /* libMHAboutView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF642CA177F63BE00FEF919 /* libMHAboutView.a */; };
 		9BF64336177F685800FEF919 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF64335177F685800FEF919 /* UIKit.framework */; };
 		9BF643391780BB7400FEF919 /* UIApplication+VersionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF643381780BB7400FEF919 /* UIApplication+VersionInfo.m */; };
+		9BF6433B1780C1D100FEF919 /* UIApplication+VersionInfo.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9BF643371780BB7400FEF919 /* UIApplication+VersionInfo.h */; };
+		9BF6433C1780C1D100FEF919 /* MHAboutViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9BF642F5177F64E900FEF919 /* MHAboutViewController.h */; };
+		9BF6433D1780C28F00FEF919 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF64335177F685800FEF919 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				9BF6433B1780C1D100FEF919 /* UIApplication+VersionInfo.h in CopyFiles */,
+				9BF6433C1780C1D100FEF919 /* MHAboutViewController.h in CopyFiles */,
 				9BF642D3177F63BE00FEF919 /* MHAboutView.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,7 +82,6 @@
 		9BF642CD177F63BE00FEF919 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9BF642D1177F63BE00FEF919 /* MHAboutView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MHAboutView-Prefix.pch"; sourceTree = "<group>"; };
 		9BF642D2177F63BE00FEF919 /* MHAboutView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHAboutView.h; sourceTree = "<group>"; };
-		9BF642D4177F63BE00FEF919 /* MHAboutView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHAboutView.m; sourceTree = "<group>"; };
 		9BF642DA177F63BF00FEF919 /* MHAboutViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MHAboutViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BF642DB177F63BF00FEF919 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9BF642DE177F63BF00FEF919 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -114,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BF6433D1780C28F00FEF919 /* UIKit.framework in Frameworks */,
 				9BF642F9177F657400FEF919 /* libJMStaticContentTable.a in Frameworks */,
 				9BF642CE177F63BE00FEF919 /* Foundation.framework in Frameworks */,
 			);
@@ -200,7 +204,6 @@
 			isa = PBXGroup;
 			children = (
 				9BF642D2177F63BE00FEF919 /* MHAboutView.h */,
-				9BF642D4177F63BE00FEF919 /* MHAboutView.m */,
 				9BF642D0177F63BE00FEF919 /* Supporting Files */,
 			);
 			path = MHAboutView;
@@ -420,7 +423,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BF643391780BB7400FEF919 /* UIApplication+VersionInfo.m in Sources */,
-				9BF642D5177F63BE00FEF919 /* MHAboutView.m in Sources */,
 				9BF642F7177F64E900FEF919 /* MHAboutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
