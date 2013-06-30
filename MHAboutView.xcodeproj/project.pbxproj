@@ -33,6 +33,7 @@
 		9BF6432B177F672600FEF919 /* MHAboutView_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF6432A177F672600FEF919 /* MHAboutView_DemoTests.m */; };
 		9BF64334177F67CB00FEF919 /* libMHAboutView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF642CA177F63BE00FEF919 /* libMHAboutView.a */; };
 		9BF64336177F685800FEF919 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF64335177F685800FEF919 /* UIKit.framework */; };
+		9BF643391780BB7400FEF919 /* UIApplication+VersionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF643381780BB7400FEF919 /* UIApplication+VersionInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,8 @@
 		9BF64328177F672600FEF919 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9BF6432A177F672600FEF919 /* MHAboutView_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHAboutView_DemoTests.m; sourceTree = "<group>"; };
 		9BF64335177F685800FEF919 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9BF643371780BB7400FEF919 /* UIApplication+VersionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+VersionInfo.h"; sourceTree = "<group>"; };
+		9BF643381780BB7400FEF919 /* UIApplication+VersionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+VersionInfo.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +158,8 @@
 		9BF642C1177F63BE00FEF919 = {
 			isa = PBXGroup;
 			children = (
+				9BF643371780BB7400FEF919 /* UIApplication+VersionInfo.h */,
+				9BF643381780BB7400FEF919 /* UIApplication+VersionInfo.m */,
 				9BF642F5177F64E900FEF919 /* MHAboutViewController.h */,
 				9BF642F6177F64E900FEF919 /* MHAboutViewController.m */,
 				9BF642CF177F63BE00FEF919 /* MHAboutView */,
@@ -414,6 +419,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BF643391780BB7400FEF919 /* UIApplication+VersionInfo.m in Sources */,
 				9BF642D5177F63BE00FEF919 /* MHAboutView.m in Sources */,
 				9BF642F7177F64E900FEF919 /* MHAboutViewController.m in Sources */,
 			);
