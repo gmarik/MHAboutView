@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <UIKit/UIApplication.h>
 
 @interface UIApplication (VersionInfo)
 
