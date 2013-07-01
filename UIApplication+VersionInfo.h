@@ -12,5 +12,7 @@
 
 +(NSString *) versionBuild;
 +(NSString *) bundleName;
++(NSString *) versionFull;
++(NSString *) machineName;
 
 @end

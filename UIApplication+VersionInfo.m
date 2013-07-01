@@ -7,6 +7,7 @@
 //
 
 #import "UIApplication+VersionInfo.h"
+#import <sys/utsname.h>
 
 // idea from http://stackoverflow.com/a/7608711/320273
 @implementation UIApplication (VersionInfo)
@@ -32,9 +33,23 @@
     return [[NSBundle mainBundle] objectForInfoDictionaryKey: @"CFBundleShortVersionString"];
 }
 
++(NSString *) versionFull {
+    return [NSString stringWithFormat:@"%@-%@", [self bundleName], [self versionBuild]];
+}
+
 + (NSString *) build
 {
     return [[NSBundle mainBundle] objectForInfoDictionaryKey: (NSString *)kCFBundleVersionKey];
+}
+
+// belongs to UIDevice
+// from http://stackoverflow.com/a/1108927/320273
++(NSString*) machineName
+{
+    struct utsname systemInfo;
+    uname(&systemInfo);
+
+    return [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
 }
 
 @end

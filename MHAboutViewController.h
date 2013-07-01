@@ -7,7 +7,8 @@
 //
 
 #import <JMStaticContentTable/JMStaticContentTable.h>
+#import <MessageUI/MessageUI.h>
 
-@interface MHAboutViewController : JMStaticContentTableViewController
+@interface MHAboutViewController : JMStaticContentTableViewController<MFMailComposeViewControllerDelegate>
 
 @end

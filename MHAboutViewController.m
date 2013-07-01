@@ -8,6 +8,7 @@
 
 #import "MHAboutViewController.h"
 #import "UIApplication+VersionInfo.h"
+#import "MailComposerController.h"
 
 
 @implementation MHAboutViewController
@@ -24,6 +25,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    __weak typeof(self) __self = self;
 
     [self addSection:^(JMStaticContentTableViewSection *section, NSUInteger sectionIndex) {
 
@@ -54,10 +57,12 @@
 
             staticContentCell.cellStyle = UITableViewCellStyleSubtitle;
 
-            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            cell.accessoryType = UITableViewCellAccessoryNone;
             cell.textLabel.text = @"Contact Us";
             cell.detailTextLabel.text = @"App@Contact.me";
             
+        } whenSelected:^(NSIndexPath *indexPath) {
+            [__self composeMailTo:__self.mailToRecipients withBody: __self.mailBody  andSubject: __self.mailSubject];
         }];
 
         [section addCell:^(JMStaticContentTableViewCell *staticContentCell, UITableViewCell *cell, NSIndexPath *indexPath) {
@@ -82,6 +87,43 @@
             cell.textLabel.text = @"More Apps From The Developer";
         }];
     }];
+}
+
+-(void)composeMailTo:(NSArray*)recipients withBody: (NSString *)body andSubject: subject {
+
+    MFMailComposeViewController *email = [[MFMailComposeViewController alloc] initWithRootViewController:self.parentViewController];
+    email.mailComposeDelegate = self;
+
+    [email setToRecipients:recipients];
+    [email setMessageBody: body isHTML:false];
+    [email setSubject:subject];
+
+    [self presentModalViewController:email animated:YES];
+}
+
+-(NSArray *)mailToRecipients {
+    return @[@"App@Contact.me"];
+}
+
+-(NSString*)mailBody {
+    return [NSString stringWithFormat:@"Hi %@ App, \n\n\n\n My device info:\n %@", UIApplication.bundleName, self.deviceInfo];
+}
+-(NSString*)mailSubject {
+    return [NSString stringWithFormat:@"%@ feedback", UIApplication.versionBuild];
+}
+
+// The mail compose view controller delegate method
+- (void)mailComposeController:(MFMailComposeViewController *)controller
+          didFinishWithResult:(MFMailComposeResult)result
+                        error:(NSError *)error
+{
+    [self dismissModalViewControllerAnimated: YES];
+}
+
+-(NSString*)deviceInfo
+{
+    UIDevice *d = [UIDevice currentDevice];
+    return [NSString stringWithFormat:@"- %@\n- %@ %@\n- %@", UIApplication.machineName, d.systemName, d.systemVersion, UIApplication.versionFull];
 }
 
 @end
