@@ -91,7 +91,7 @@
 
 -(void)composeMailTo:(NSArray*)recipients withBody: (NSString *)body andSubject: subject {
 
-    MFMailComposeViewController *email = [[MFMailComposeViewController alloc] initWithRootViewController:self.parentViewController];
+    MFMailComposeViewController *email = [[MFMailComposeViewController alloc] init];
     email.mailComposeDelegate = self;
 
     [email setToRecipients:recipients];
