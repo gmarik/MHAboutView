@@ -40,17 +40,6 @@
 
         [section addCell:^(JMStaticContentTableViewCell *staticContentCell, UITableViewCell *cell, NSIndexPath *indexPath) {
 
-            staticContentCell.cellStyle = UITableViewCellStyleSubtitle;
-
-            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-            cell.textLabel.text = @"Unlock Full Version";
-            cell.detailTextLabel.text = @"Unlimited number of projects";
-
-            cell.accessoryView = [[UISwitch alloc] init];
-        }];
-
-        [section addCell:^(JMStaticContentTableViewCell *staticContentCell, UITableViewCell *cell, NSIndexPath *indexPath) {
-
             staticContentCell.cellStyle = UITableViewCellStyleDefault;
 
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
@@ -67,7 +56,7 @@
 
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             cell.textLabel.text = @"Contact Us";
-            cell.detailTextLabel.text = @"App@Regularly.me";
+            cell.detailTextLabel.text = @"App@Contact.me";
             
         }];
 
