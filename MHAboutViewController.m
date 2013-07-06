@@ -37,7 +37,7 @@
             staticContentCell.cellStyle = UITableViewCellStyleValue1;
 
             cell.accessoryType = UITableViewCellAccessoryNone;
-            cell.textLabel.text = @"Regularly.me";
+            cell.textLabel.text = UIApplication.bundleName;
             cell.detailTextLabel.text = UIApplication.versionBuild;
         }];
 
@@ -59,7 +59,7 @@
 
             cell.accessoryType = UITableViewCellAccessoryNone;
             cell.textLabel.text = @"Contact Us";
-            cell.detailTextLabel.text = @"App@Contact.me";
+            cell.detailTextLabel.text = __self.contactEmail;
             
         } whenSelected:^(NSIndexPath *indexPath) {
             [__self composeMailTo:__self.mailToRecipients withBody: __self.mailBody  andSubject: __self.mailSubject];
@@ -71,6 +71,9 @@
 
             //            cell.accessoryType = UITableViewCellAccessoryNone;
             cell.textLabel.text = @"Review In The App Store";
+        } whenSelected:^(NSIndexPath *indexPath) {
+            // TODO: open appstore inline
+            [UIApplication.sharedApplication openURL:__self.reviewURI];
         }];
 
     }];
@@ -85,6 +88,8 @@
 
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             cell.textLabel.text = @"More Apps From The Developer";
+        } whenSelected:^(NSIndexPath *indexPath) {
+            [UIApplication.sharedApplication openURL:__self.reviewURI];
         }];
     }];
 }
@@ -124,6 +129,26 @@
 {
     UIDevice *d = [UIDevice currentDevice];
     return [NSString stringWithFormat:@"- %@\n- %@ %@\n- %@", UIApplication.machineName, d.systemName, d.systemVersion, UIApplication.versionFull];
+}
+
+-(NSDictionary *)aboutViewInfo {
+ return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"MHAboutViewInfo"];
+}
+
+#pragma mark info
+-(NSURL *)developerURI {
+    return [NSURL URLWithString: self.aboutViewInfo[@"DeveloperURI"]];
+}
+-(NSURL *)reviewURI {
+    return [NSURL URLWithString: self.aboutViewInfo[@"ReviewURI"]];
+}
+
+-(NSString *)contactEmail {
+    return self.aboutViewInfo[@"ContactEmail"];
+}
+
+-(NSString *)changelogFileName {
+    return self.aboutViewInfo[@"ChangelogFileName"];
 }
 
 @end

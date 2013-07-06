@@ -43,5 +43,16 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>MHAboutViewInfo</key>
+	<dict>
+		<key>ReviewURI</key>
+		<string>https://itunes.apple.com/us/app/regularly.me/id615302436</string>
+		<key>DeveloperURI</key>
+		<string>https://itunes.apple.com/us/artist/maryan-hratson/id615302439</string>
+		<key>ContactEmail</key>
+		<string>Hi@Appna.me</string>
+		<key>ChangelogFileName</key>
+		<string>ChangeLog.html</string>
+	</dict>
 </dict>
 </plist>
