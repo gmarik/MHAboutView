@@ -16,10 +16,11 @@
 
     self.window = [[UIWindow alloc] initWithFrame: [UIScreen mainScreen].bounds];
 
-
     MHAboutViewController *about = [[MHAboutViewController alloc] init];
 
-    self.window.rootViewController = about;
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController: about];
+
+    self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
 
     return YES;

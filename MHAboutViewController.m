@@ -17,6 +17,7 @@
 {
     self = [super initWithStyle:UITableViewStyleGrouped];
     if (self) {
+        self.title = @"About";
         // Custom initialization
     }
     return self;
