@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B4DA8341789D3BC002357B7 /* Changelog.html in Resources */ = {isa = PBXBuildFile; fileRef = 9B4DA8331789D3BC002357B7 /* Changelog.html */; };
 		9BF642CE177F63BE00FEF919 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF642CD177F63BE00FEF919 /* Foundation.framework */; };
 		9BF642D3177F63BE00FEF919 /* MHAboutView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9BF642D2177F63BE00FEF919 /* MHAboutView.h */; };
 		9BF642DC177F63BF00FEF919 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF642DB177F63BF00FEF919 /* XCTest.framework */; };
@@ -78,6 +79,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9B4DA8331789D3BC002357B7 /* Changelog.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Changelog.html; sourceTree = "<group>"; };
 		9BF642CA177F63BE00FEF919 /* libMHAboutView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMHAboutView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BF642CD177F63BE00FEF919 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9BF642D1177F63BE00FEF919 /* MHAboutView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MHAboutView-Prefix.pch"; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 		9BF64303177F672500FEF919 /* MHAboutView Demo */ = {
 			isa = PBXGroup;
 			children = (
+				9B4DA8331789D3BC002357B7 /* Changelog.html */,
 				9BF6430C177F672500FEF919 /* MHAppDelegate.h */,
 				9BF6430D177F672500FEF919 /* MHAppDelegate.m */,
 				9BF64315177F672500FEF919 /* MHViewController.h */,
@@ -403,6 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BF64319177F672500FEF919 /* Images.xcassets in Resources */,
+				9B4DA8341789D3BC002357B7 /* Changelog.html in Resources */,
 				9BF64308177F672500FEF919 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

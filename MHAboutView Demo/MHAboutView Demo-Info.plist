@@ -52,7 +52,7 @@
 		<key>ContactEmail</key>
 		<string>Hi@Appna.me</string>
 		<key>ChangelogFileName</key>
-		<string>ChangeLog.html</string>
+		<string>Changelog.html</string>
 	</dict>
 </dict>
 </plist>
