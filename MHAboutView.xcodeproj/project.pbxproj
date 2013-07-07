@@ -91,8 +91,8 @@
 		9BF642E7177F63BF00FEF919 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9BF642E9177F63BF00FEF919 /* MHAboutViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHAboutViewTests.m; sourceTree = "<group>"; };
 		9BF642F3177F64AB00FEF919 /* libJMStaticContentTable.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJMStaticContentTable.a; path = "../JMStaticContentTableViewController/JMStaticContentTable/build/Debug-iphoneos/libJMStaticContentTable.a"; sourceTree = "<group>"; };
-		9BF642F5177F64E900FEF919 /* MHAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHAboutViewController.h; sourceTree = "<group>"; };
-		9BF642F6177F64E900FEF919 /* MHAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHAboutViewController.m; sourceTree = "<group>"; };
+		9BF642F5177F64E900FEF919 /* MHAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHAboutViewController.h; path = MHAboutView/MHAboutViewController.h; sourceTree = SOURCE_ROOT; };
+		9BF642F6177F64E900FEF919 /* MHAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHAboutViewController.m; path = MHAboutView/MHAboutViewController.m; sourceTree = SOURCE_ROOT; };
 		9BF642F8177F657400FEF919 /* libJMStaticContentTable.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJMStaticContentTable.a; path = "../../../Library/Developer/Xcode/DerivedData/Regularly.me-ddkerbjwyowamjauabgemmlbcxkv/Build/Products/Debug-iphoneos/libJMStaticContentTable.a"; sourceTree = "<group>"; };
 		9BF642FE177F672500FEF919 /* MHAboutView Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MHAboutView Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BF64300177F672500FEF919 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -110,8 +110,8 @@
 		9BF64328177F672600FEF919 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9BF6432A177F672600FEF919 /* MHAboutView_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHAboutView_DemoTests.m; sourceTree = "<group>"; };
 		9BF64335177F685800FEF919 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		9BF643371780BB7400FEF919 /* UIApplication+VersionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+VersionInfo.h"; sourceTree = "<group>"; };
-		9BF643381780BB7400FEF919 /* UIApplication+VersionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+VersionInfo.m"; sourceTree = "<group>"; };
+		9BF643371780BB7400FEF919 /* UIApplication+VersionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIApplication+VersionInfo.h"; path = "MHAboutView/UIApplication+VersionInfo.h"; sourceTree = SOURCE_ROOT; };
+		9BF643381780BB7400FEF919 /* UIApplication+VersionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+VersionInfo.m"; path = "MHAboutView/UIApplication+VersionInfo.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,10 +164,6 @@
 		9BF642C1177F63BE00FEF919 = {
 			isa = PBXGroup;
 			children = (
-				9BF643371780BB7400FEF919 /* UIApplication+VersionInfo.h */,
-				9BF643381780BB7400FEF919 /* UIApplication+VersionInfo.m */,
-				9BF642F5177F64E900FEF919 /* MHAboutViewController.h */,
-				9BF642F6177F64E900FEF919 /* MHAboutViewController.m */,
 				9BF642CF177F63BE00FEF919 /* MHAboutView */,
 				9BF642E3177F63BF00FEF919 /* MHAboutViewTests */,
 				9BF64303177F672500FEF919 /* MHAboutView Demo */,
@@ -205,6 +201,10 @@
 		9BF642CF177F63BE00FEF919 /* MHAboutView */ = {
 			isa = PBXGroup;
 			children = (
+				9BF643371780BB7400FEF919 /* UIApplication+VersionInfo.h */,
+				9BF643381780BB7400FEF919 /* UIApplication+VersionInfo.m */,
+				9BF642F5177F64E900FEF919 /* MHAboutViewController.h */,
+				9BF642F6177F64E900FEF919 /* MHAboutViewController.m */,
 				9BF642D2177F63BE00FEF919 /* MHAboutView.h */,
 				9BF642D0177F63BE00FEF919 /* Supporting Files */,
 			);
