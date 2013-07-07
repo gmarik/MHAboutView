@@ -113,7 +113,7 @@
 }
 
 -(NSArray *)mailToRecipients {
-    return @[@"App@Contact.me"];
+    return @[self.contactEmail];
 }
 
 -(NSString*)mailBody {
