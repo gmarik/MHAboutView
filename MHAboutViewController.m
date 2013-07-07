@@ -48,6 +48,10 @@
 
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             cell.textLabel.text = @"What's New";
+        } whenSelected:^(NSIndexPath *indexPath) {
+
+            [__self displayChangelog];
+
         }];
     }];
 
@@ -134,6 +138,29 @@
 
 -(NSDictionary *)aboutViewInfo {
  return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"MHAboutViewInfo"];
+}
+
+-(void)displayChangelog {
+    NSString *path = [NSBundle.mainBundle pathForResource:self.changelogFileName ofType:nil];
+    [self navigateTo:[NSURL fileURLWithPath:path]];
+}
+
+-(void)openURI: (NSURL *)url {
+    NSLog(@"%@", url);
+    [UIApplication.sharedApplication openURL:url];
+}
+
+-(void)navigateTo: (NSURL *)url {
+    NSLog(@"%@", url);
+    UIWebView *webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [webView loadRequest:request];
+
+    UIViewController *c = [[UIViewController alloc] init];
+    c.title = @"What's New";
+    c.view = webView;
+
+    [self.navigationController pushViewController:c animated:YES];
 }
 
 #pragma mark info
