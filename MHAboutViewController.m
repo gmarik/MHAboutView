@@ -78,7 +78,7 @@
             cell.textLabel.text = @"Review In The App Store";
         } whenSelected:^(NSIndexPath *indexPath) {
             // TODO: open appstore inline
-            [UIApplication.sharedApplication openURL:__self.reviewURI];
+            [__self openURI:__self.reviewURI];
         }];
 
     }];
@@ -94,7 +94,8 @@
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             cell.textLabel.text = @"More Apps From The Developer";
         } whenSelected:^(NSIndexPath *indexPath) {
-            [UIApplication.sharedApplication openURL:__self.reviewURI];
+            [__self openURI: __self.developerURI];
+
         }];
     }];
 }
