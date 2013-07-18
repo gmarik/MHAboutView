@@ -78,7 +78,7 @@
             cell.textLabel.text = @"Review In The App Store";
         } whenSelected:^(NSIndexPath *indexPath) {
             // TODO: open appstore inline
-            [__self openURI:__self.reviewURI];
+            [__self openURL:__self.reviewURL];
         }];
 
     }];
@@ -94,7 +94,7 @@
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             cell.textLabel.text = @"More Apps From The Developer";
         } whenSelected:^(NSIndexPath *indexPath) {
-            [__self openURI: __self.developerURI];
+            [__self openURL: __self.developerURL];
 
         }];
     }];
@@ -146,7 +146,7 @@
     [self navigateTo:[NSURL fileURLWithPath:path]];
 }
 
--(void)openURI: (NSURL *)url {
+-(void)openURL: (NSURL *)url {
     NSLog(@"%@", url);
     [UIApplication.sharedApplication openURL:url];
 }
@@ -165,11 +165,11 @@
 }
 
 #pragma mark info
--(NSURL *)developerURI {
-    return [NSURL URLWithString: self.aboutViewInfo[@"DeveloperURI"]];
+-(NSURL *)developerURL {
+    return [NSURL URLWithString: self.aboutViewInfo[@"DeveloperURL"]];
 }
--(NSURL *)reviewURI {
-    return [NSURL URLWithString: self.aboutViewInfo[@"ReviewURI"]];
+-(NSURL *)reviewURL {
+    return [NSURL URLWithString: self.aboutViewInfo[@"ReviewURL"]];
 }
 
 -(NSString *)contactEmail {
