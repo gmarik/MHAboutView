@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B2B0AB917B02D5F00C05492 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2B0AB817B02D5F00C05492 /* MessageUI.framework */; };
 		9B4DA8341789D3BC002357B7 /* Changelog.html in Resources */ = {isa = PBXBuildFile; fileRef = 9B4DA8331789D3BC002357B7 /* Changelog.html */; };
 		9BF642CE177F63BE00FEF919 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF642CD177F63BE00FEF919 /* Foundation.framework */; };
 		9BF642D3177F63BE00FEF919 /* MHAboutView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9BF642D2177F63BE00FEF919 /* MHAboutView.h */; };
@@ -54,6 +55,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9B2B0AB817B02D5F00C05492 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		9B4DA8331789D3BC002357B7 /* Changelog.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Changelog.html; sourceTree = "<group>"; };
 		9BF642CA177F63BE00FEF919 /* libMHAboutView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMHAboutView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BF642CD177F63BE00FEF919 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -86,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B2B0AB917B02D5F00C05492 /* MessageUI.framework in Frameworks */,
 				9BF6433D1780C28F00FEF919 /* UIKit.framework in Frameworks */,
 				9BF642F9177F657400FEF919 /* libJMStaticContentTable.a in Frameworks */,
 				9BF642CE177F63BE00FEF919 /* Foundation.framework in Frameworks */,
@@ -129,6 +132,7 @@
 		9BF642CC177F63BE00FEF919 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9B2B0AB817B02D5F00C05492 /* MessageUI.framework */,
 				9BF64335177F685800FEF919 /* UIKit.framework */,
 				9BF642F8177F657400FEF919 /* libJMStaticContentTable.a */,
 				9BF642F3177F64AB00FEF919 /* libJMStaticContentTable.a */,
