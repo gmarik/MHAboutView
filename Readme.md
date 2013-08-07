@@ -1,7 +1,7 @@
 About MHAboutView
 ================
 
-[MHAboutView] is a generic, reusable about view for your iOS app.
+[MHAboutView] is a generic, reusable "About view" for your iOS app.
 
 Features
 ------------
