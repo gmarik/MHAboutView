@@ -28,7 +28,7 @@ cd MHAboutView
 open MHAboutView.xcodeproj
 ```
 
-To see the demo app select and run `MHAboutView Demo` scheme.
+To see the demo app select and run `MHAboutView Demo` target.
 
 ## Dependencies
 
