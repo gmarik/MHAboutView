@@ -56,7 +56,11 @@ Once installed, configuration is pretty straightforward:
 
     see `MHAboutView Demo` target as an example.
 
-6. Adding MHAboutView into the app is like this:
+6. Adding MHAboutView to an app:
+
+        #import <MHAboutView/MHAboutView.h>
+
+        // ..
 
         MHAboutViewController *about = [[MHAboutViewController alloc] init];
         UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController: about];
