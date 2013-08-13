@@ -16,9 +16,7 @@ Features
 
 Screenshots
 ------------
-- About view ![about view](/Docs/AboutView.png)
-- Contact us ![contacts us](/Docs/ContactUs.png)
-- Changelog  ![Changelog](/Docs/Changelog.png)
+![about view](/Docs/AboutView.png) ![contacts us](/Docs/ContactUs.png) ![Changelog](/Docs/Changelog.png)
 
 ## Installation
 
