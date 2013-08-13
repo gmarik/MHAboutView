@@ -1,0 +1,3 @@
+[submodule "Vendor/JMStaticContentTableViewController"]
+	path = Vendor/JMStaticContentTableViewController
+	url = https://github.com/jakemarsh/JMStaticContentTableViewController.git
