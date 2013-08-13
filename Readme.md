@@ -1,18 +1,18 @@
 About MHAboutView
 ================
 
-[MHAboutView] is a generic, reusable "About view" for your iOS app.
+[MHAboutView] is a generic, reusable 'About view' for your iOS app.
 
 Features
 ------------
 
-- app name and version info.
-- email feedback with `MFMailComposeViewController`
-- email body includes app and version info aswell
-- links to the app's review and developer's pages
-- configurable via Info.plist
-- easy customization with [JMStaticContentTableViewController]
-- Changelog using WebView
+- An App Name and Version Info.
+- Email feedback with `MFMailComposeViewController`
+- Email body includes app and version info aswell
+- Links to the app's review and developer's pages
+- Configurable via `Info.plist`
+- Easy customization with [JMStaticContentTableViewController]
+- WebView based `Changelog`
 
 Screenshots
 ------------
@@ -69,3 +69,6 @@ Once installed, configuration is pretty straightforward:
 
 [MHAboutView]:https://github.com/gmarik/MHAboutView
 [JMStaticContentTableViewController]:https://github.com/????/JMStaticContentTableViewController
+
+## TODO:
+- Changelog styled appropriately for OS
