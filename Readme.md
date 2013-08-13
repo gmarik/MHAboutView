@@ -16,9 +16,9 @@ Features
 
 Screenshots
 ------------
-- About view [!](/Docs/AboutView.png)
-- Contact us [!](/Docs/ContactUs.png)
-- Changelog  [!](/Docs/Changelog.png)
+- About view ![about view](/Docs/AboutView.png)
+- Contact us ![contacts us](/Docs/ContactUs.png)
+- Changelog  ![Changelog](/Docs/Changelog.png)
 
 ## Installation
 
@@ -69,5 +69,5 @@ Once installed, configuration is pretty straightforward:
     see `MHAboutView Demo/MHAppDelegate.m`  as an example.
 
 
-- [MHAboutView]:https://github.com/gmarik/MHAboutView
-- [JMStaticContentTableViewController]:https://github.com/????/JMStaticContentTableViewController
+[MHAboutView]:https://github.com/gmarik/MHAboutView
+[JMStaticContentTableViewController]:https://github.com/????/JMStaticContentTableViewController
