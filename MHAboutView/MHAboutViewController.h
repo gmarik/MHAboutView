@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Maryan Hratson. All rights reserved.
 //
 
-#import <JMStaticContentTable/JMStaticContentTable.h>
 #import <MessageUI/MessageUI.h>
+#import "JMStaticContentTableViewController.h"
 
 @interface MHAboutViewController : JMStaticContentTableViewController<MFMailComposeViewControllerDelegate>
 

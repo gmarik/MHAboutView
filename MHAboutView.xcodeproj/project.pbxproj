@@ -9,10 +9,18 @@
 /* Begin PBXBuildFile section */
 		9B2B0AB917B02D5F00C05492 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2B0AB817B02D5F00C05492 /* MessageUI.framework */; };
 		9B4DA8341789D3BC002357B7 /* Changelog.html in Resources */ = {isa = PBXBuildFile; fileRef = 9B4DA8331789D3BC002357B7 /* Changelog.html */; };
+		9BBCA30F17BAADEA00804EFF /* JMStaticContentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBCA30817BAADEA00804EFF /* JMStaticContentTableViewCell.m */; };
+		9BBCA31017BAADEA00804EFF /* JMStaticContentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBCA30A17BAADEA00804EFF /* JMStaticContentTableViewController.m */; };
+		9BBCA31117BAADEA00804EFF /* JMStaticContentTableViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBCA30C17BAADEA00804EFF /* JMStaticContentTableViewSection.m */; };
+		9BBCA31217BAADEA00804EFF /* JMStaticContentTextFieldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBCA30E17BAADEA00804EFF /* JMStaticContentTextFieldTableViewCell.m */; };
+		9BBCA31417BAAE3D00804EFF /* JMStaticContentTableViewBlocks.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9BBCA30617BAADEA00804EFF /* JMStaticContentTableViewBlocks.h */; };
+		9BBCA31517BAAE3D00804EFF /* JMStaticContentTableViewCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9BBCA30717BAADEA00804EFF /* JMStaticContentTableViewCell.h */; };
+		9BBCA31617BAAE3D00804EFF /* JMStaticContentTableViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9BBCA30917BAADEA00804EFF /* JMStaticContentTableViewController.h */; };
+		9BBCA31717BAAE3D00804EFF /* JMStaticContentTableViewSection.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9BBCA30B17BAADEA00804EFF /* JMStaticContentTableViewSection.h */; };
+		9BBCA31817BAAE3D00804EFF /* JMStaticContentTextFieldTableViewCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9BBCA30D17BAADEA00804EFF /* JMStaticContentTextFieldTableViewCell.h */; };
 		9BF642CE177F63BE00FEF919 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF642CD177F63BE00FEF919 /* Foundation.framework */; };
 		9BF642D3177F63BE00FEF919 /* MHAboutView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9BF642D2177F63BE00FEF919 /* MHAboutView.h */; };
 		9BF642F7177F64E900FEF919 /* MHAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF642F6177F64E900FEF919 /* MHAboutViewController.m */; };
-		9BF642F9177F657400FEF919 /* libJMStaticContentTable.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF642F8177F657400FEF919 /* libJMStaticContentTable.a */; };
 		9BF642FF177F672500FEF919 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF642CD177F63BE00FEF919 /* Foundation.framework */; };
 		9BF64301177F672500FEF919 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF64300177F672500FEF919 /* CoreGraphics.framework */; };
 		9BF64302177F672500FEF919 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF642DE177F63BF00FEF919 /* UIKit.framework */; };
@@ -46,6 +54,11 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				9BBCA31417BAAE3D00804EFF /* JMStaticContentTableViewBlocks.h in CopyFiles */,
+				9BBCA31517BAAE3D00804EFF /* JMStaticContentTableViewCell.h in CopyFiles */,
+				9BBCA31617BAAE3D00804EFF /* JMStaticContentTableViewController.h in CopyFiles */,
+				9BBCA31717BAAE3D00804EFF /* JMStaticContentTableViewSection.h in CopyFiles */,
+				9BBCA31817BAAE3D00804EFF /* JMStaticContentTextFieldTableViewCell.h in CopyFiles */,
 				9BF6433B1780C1D100FEF919 /* UIApplication+VersionInfo.h in CopyFiles */,
 				9BF6433C1780C1D100FEF919 /* MHAboutViewController.h in CopyFiles */,
 				9BF642D3177F63BE00FEF919 /* MHAboutView.h in CopyFiles */,
@@ -57,6 +70,15 @@
 /* Begin PBXFileReference section */
 		9B2B0AB817B02D5F00C05492 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		9B4DA8331789D3BC002357B7 /* Changelog.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Changelog.html; sourceTree = "<group>"; };
+		9BBCA30617BAADEA00804EFF /* JMStaticContentTableViewBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMStaticContentTableViewBlocks.h; sourceTree = "<group>"; };
+		9BBCA30717BAADEA00804EFF /* JMStaticContentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMStaticContentTableViewCell.h; sourceTree = "<group>"; };
+		9BBCA30817BAADEA00804EFF /* JMStaticContentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMStaticContentTableViewCell.m; sourceTree = "<group>"; };
+		9BBCA30917BAADEA00804EFF /* JMStaticContentTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMStaticContentTableViewController.h; sourceTree = "<group>"; };
+		9BBCA30A17BAADEA00804EFF /* JMStaticContentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMStaticContentTableViewController.m; sourceTree = "<group>"; };
+		9BBCA30B17BAADEA00804EFF /* JMStaticContentTableViewSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMStaticContentTableViewSection.h; sourceTree = "<group>"; };
+		9BBCA30C17BAADEA00804EFF /* JMStaticContentTableViewSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMStaticContentTableViewSection.m; sourceTree = "<group>"; };
+		9BBCA30D17BAADEA00804EFF /* JMStaticContentTextFieldTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMStaticContentTextFieldTableViewCell.h; sourceTree = "<group>"; };
+		9BBCA30E17BAADEA00804EFF /* JMStaticContentTextFieldTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMStaticContentTextFieldTableViewCell.m; sourceTree = "<group>"; };
 		9BF642CA177F63BE00FEF919 /* libMHAboutView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMHAboutView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BF642CD177F63BE00FEF919 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9BF642D1177F63BE00FEF919 /* MHAboutView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MHAboutView-Prefix.pch"; sourceTree = "<group>"; };
@@ -90,7 +112,6 @@
 			files = (
 				9B2B0AB917B02D5F00C05492 /* MessageUI.framework in Frameworks */,
 				9BF6433D1780C28F00FEF919 /* UIKit.framework in Frameworks */,
-				9BF642F9177F657400FEF919 /* libJMStaticContentTable.a in Frameworks */,
 				9BF642CE177F63BE00FEF919 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,6 +131,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9BBCA30517BAADEA00804EFF /* JMStaticContentTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9BBCA30617BAADEA00804EFF /* JMStaticContentTableViewBlocks.h */,
+				9BBCA30717BAADEA00804EFF /* JMStaticContentTableViewCell.h */,
+				9BBCA30817BAADEA00804EFF /* JMStaticContentTableViewCell.m */,
+				9BBCA30917BAADEA00804EFF /* JMStaticContentTableViewController.h */,
+				9BBCA30A17BAADEA00804EFF /* JMStaticContentTableViewController.m */,
+				9BBCA30B17BAADEA00804EFF /* JMStaticContentTableViewSection.h */,
+				9BBCA30C17BAADEA00804EFF /* JMStaticContentTableViewSection.m */,
+				9BBCA30D17BAADEA00804EFF /* JMStaticContentTextFieldTableViewCell.h */,
+				9BBCA30E17BAADEA00804EFF /* JMStaticContentTextFieldTableViewCell.m */,
+			);
+			name = JMStaticContentTableViewController;
+			path = Vendor/JMStaticContentTableViewController/JMStaticContentTableViewController;
+			sourceTree = "<group>";
+		};
+		9BBCA31317BAADF500804EFF /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				9BBCA30517BAADEA00804EFF /* JMStaticContentTableViewController */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
 		9BF642C1177F63BE00FEF919 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +163,7 @@
 				9BF64303177F672500FEF919 /* MHAboutView Demo */,
 				9BF642CC177F63BE00FEF919 /* Frameworks */,
 				9BF642CB177F63BE00FEF919 /* Products */,
+				9BBCA31317BAADF500804EFF /* Vendor */,
 			);
 			sourceTree = "<group>";
 		};
@@ -274,8 +321,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BBCA31217BAADEA00804EFF /* JMStaticContentTextFieldTableViewCell.m in Sources */,
+				9BBCA31017BAADEA00804EFF /* JMStaticContentTableViewController.m in Sources */,
 				9BF643391780BB7400FEF919 /* UIApplication+VersionInfo.m in Sources */,
+				9BBCA30F17BAADEA00804EFF /* JMStaticContentTableViewCell.m in Sources */,
 				9BF642F7177F64E900FEF919 /* MHAboutViewController.m in Sources */,
+				9BBCA31117BAADEA00804EFF /* JMStaticContentTableViewSection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
