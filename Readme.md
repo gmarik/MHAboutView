@@ -37,10 +37,9 @@ To see the demo app select and run `MHAboutView Demo` target.
 Once installed, configuration is pretty straightforward:
 
 1. add `MHAboutView.xcodeproject` to your app's project or workspace
-2. add `MHAboutView` project to `Target Dependencies` in `Build Phases`
-3. add `libMHAboutView.a` library to `Link Binary With Libraries` in `Build Phases`
-4. ensure `Other Linker Flags` includes `-ObjC` flag in `Build Settings` section
-5. [MHAboutView] expects app's `Info.plist` to have `MHAboutViewInfo` entry with dictionary describing contact email, urls and changelog filename, ie:
+2. add `libMHAboutView.a` library to `Link Binary With Libraries` in `Build Phases`
+3. ensure `Other Linker Flags` includes `-ObjC` flag in `Build Settings` section
+4. [MHAboutView] expects app's `Info.plist` to have `MHAboutViewInfo` entry with dictionary describing contact email, urls and changelog filename, ie:
 
         <key>MHAboutViewInfo</key>
         <dict>
